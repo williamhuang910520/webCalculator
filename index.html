@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>webCalculator</title>
+    <link href="style.css" rel="stylesheet" />
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div id="container">
+        <p id="input"></p>
+        <table>
+            <tr>
+                <td onclick="noFun()">(</td>
+                <td onclick="noFun()">)</td>
+                <td onclick="noFun()">%</td>
+                <td onclick="CE()">CE</td>
+            </tr>
+            <tr>
+                <td onclick="num(7)" class="num">7</td>
+                <td onclick="num(8)" class="num">8</td>
+                <td onclick="num(9)" class="num">9</td>
+                <td onclick="op('div')" id="div">÷</td>
+            </tr>
+            <tr>
+                <td onclick="num(4)" class="num">4</td>
+                <td onclick="num(5)" class="num">5</td>
+                <td onclick="num(6)" class="num">6</td>
+                <td onclick="op('mul')" id="mul">×</td>
+            </tr>
+            <tr>
+                <td onclick="num(1)" class="num">1</td>
+                <td onclick="num(2)" class="num">2</td>
+                <td onclick="num(3)" class="num">3</td>
+                <td onclick="op('min')"  id="min">−</td>
+            </tr>
+            <tr>
+                <td onclick="num(8)" class="num" colspan="2">0</td>
+                <td onclick="calculate()" id="equal">=</td>
+                <td onclick="op('plus')" id="plus">+</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
